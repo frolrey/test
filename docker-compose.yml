@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  php:
+    image: php:8.2-fpm
+    container_name: php_container
+    volumes:
+      - ./src:/var/www/html
+    networks:
+      - app-network
+  nginx:
+    image: nginx:latest
+    container_name: nginx_container
+    volumes:
+      - ./src:/var/www/html
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./conf.d:/etc/nginx/conf.d
+    ports:
+      - "8080:80"
+    depends_on:
+      - php
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
