@@ -3,10 +3,10 @@
 $z = range(1,1000);
 for ($i=10; $i<count($z); $i++)
 {
-    $p = strval ($z[$i]);
+    $p = (string)$z[$i];
     if (count_chars($p) >= 2)
 	{
-        $t = str_split($p);
+        $t = mb_str_split($p);
         if ($t[0]+$t[1] == 5) 
 		{
 			echo "<pre>";

@@ -1,13 +1,12 @@
 <?php
 //Дан массив с числами. Оставьте в нем только положительные числа.
 $z = range(-10,10);
-var_dump($z);
 echo "<pre>";
-for ($i=0; $i<count($z); $i++)
-{
-	if($z[$i]<0)
+print_r($z);
+foreach ($z as $key => $value) {
+	if ($value<0)
 	{
-		unset($z[$i]);
+		unset($z[$key]);
 	}
 }
-var_dump($z);
+print_r($z);

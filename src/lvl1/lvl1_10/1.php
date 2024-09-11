@@ -11,4 +11,5 @@ function array_random(array $array, int $n = 1): array
         : array($array[array_rand($array)]);
 }
 $v = array_random(range(0,100), $n = 10);
-print_r($v);
+print_r($v); 
+//переделать, минус

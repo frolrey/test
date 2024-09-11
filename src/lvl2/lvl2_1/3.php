@@ -1,6 +1,10 @@
 <?php
 //Дан массив. Удалите из него элементы с заданным значением.
 $z = range(1,20);
-$h = array_search(7, $z);
-unset($z[$h]);
+foreach ($z as $key => $value) {
+	if ($value == 7)
+	{
+		unset($z[$key]);
+	}
+}
 print_r($z);

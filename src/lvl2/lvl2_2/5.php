@@ -4,4 +4,4 @@
 [1, 2, 3, 4, 5, 6]
 Поделите сумму первой половины элементов этого массива на сумму второй половины элементов.*/
 $a = range(1,6);
-echo $b = array_sum(array_slice($a, 0, count($a)/2)) / array_sum(array_slice($a, 3, count($a)/2));
+echo $b = array_sum(array_slice($a, 0, count($a)/2)) / array_sum(array_slice($a, count($a)/2, count($a)/2));

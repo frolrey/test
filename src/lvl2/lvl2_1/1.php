@@ -1,4 +1,4 @@
 <?php
 //Дана некоторая строка. Найдите позицию первого нуля в строке.
-$z = "asdfoji0jm";
-print_r(strpos($z, "0"));
+$z = "aпидорsdfoji0jm";
+print_r(mb_strpos($z, "0"));
