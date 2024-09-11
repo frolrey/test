@@ -5,4 +5,4 @@ foreach ($v as $key => $value)
 {
 	$v[$key]*=1.1;
 }
-print_r($v);
+print_r($v);//ho;uighydf;jkdfklhmrthjnrjopitjhojkfdmnxmcfnkl;mdfl;kgjhkdfjg;h'
