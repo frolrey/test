@@ -12,3 +12,6 @@ $h = mb_str_split($z);
         }
 echo "<br>"."Позиция нуля ".stripos($z, "0");
 print_r($v);
+// echo "<pre>";
+// $suka = [0 => "pedik", 1 => "tvar"];
+// print_r($suka);
