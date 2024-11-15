@@ -3,29 +3,37 @@
 
 'abcba'
 Проверьте, что это слово читается одинаково с любой стороны.*/ 
-$z = "abcba";
-$h = mb_str_split($z);
-$k = 1;
-for ($i = 0; $i<count($h); $i++)
-{
-    if ($h[$i] == $h[count($h)-$k])
-	{
-		if ($k > count($h)/2)
-		{
-			break;
-		}
-		else
-		{
-		continue;
-		}
-	} 
-	$k++;
-}
-if ($k > count($h)/2)
-{
-	echo "yos";
-}
-else 
-{
-	echo "niou";	
-}//??????
+ $z = "abcba";
+// $h = mb_str_split($z);
+// $k = 1;
+// for ($i = 0; $i<count($h); $i++)
+// {
+//     if ($h[$i] == $h[count($h)-$k])
+// 	{
+// 		if ($k > count($h)/2)
+// 		{
+// 			break;
+// 		}
+// 		else
+// 		{
+// 		continue;
+// 		}
+// 	} 
+// 	$k++;
+// }
+// if ($k > count($h)/2)
+// {
+// 	echo "yos";
+// }
+// else 
+// {
+// 	echo "niou";	
+// }//??????
+// if ($z === strrev($z))
+// {
+// 	echo "yios";
+// }
+// else {
+// 	echo "noids";
+// }
+echo ($z === strrev($z) ? 'suka' : 'blyat' );

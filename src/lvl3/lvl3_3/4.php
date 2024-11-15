@@ -37,14 +37,31 @@ $z = [
 	],
 ];
 $k = 0;
-for ($i=0; $i<3; $i++)
+for ($i=0; $i<count($z); $i++)
 {
-	for ($j=0; $j<3; $j++)
+	for ($j=0; $j<count($z[$i]); $j++)
 	{
-		for($g=0; $g<3; $g++)
+		for($g=0; $g<count($z[$i][$j]); $g++)
 		{
             $k += $z[$i][$j][$g];
 		}
 	}
 }
+echo $k;
+$k = 0;
+echo "<pre>";
+foreach($z as $value)
+{
+	
+	foreach($value as $blya)
+	{
+		
+		foreach($blya as $pidor)
+		{
+			echo "<pre>";
+	    	$k+=$pidor;
+		}
+	}
+}
+echo "<pre>";
 echo $k;
