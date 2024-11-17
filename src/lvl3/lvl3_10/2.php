@@ -10,5 +10,8 @@ foreach ($z as $k => $v) {
         unset($z[$k]);
     }
 }
+$zz = range(1,20);
+echo '<pre>';
+print_r(array_filter($zz, fn($h) => $num % $h === 0));
 echo "<pre>";
 print_r($z);

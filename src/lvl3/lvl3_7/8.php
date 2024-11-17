@@ -12,10 +12,18 @@
 //сука хоть убей не получается
 
 $z = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod';
-$zz = mb_str_split($z);
+$zz = explode(" ", $z);
+$l = '';
 foreach ($zz as $k => $h) {
-    //???????????????????????
+    $hh = mb_str_split($h);
+    if ($hh[count($hh) - 1] === ',') {
+        $hh[count($hh) - 2] = strtoupper($hh[count($hh) - 2]);
+    }
+    else{
+        $hh[count($hh) - 1] = strtoupper($hh[count($hh) - 1]);
+    }
+    $l .= implode('', $hh)." ";
 }
-echo implode('', $zz);
+echo $l;
 
 

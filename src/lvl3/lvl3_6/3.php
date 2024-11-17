@@ -6,10 +6,9 @@
 //
 //[1, 2, 3, 4, 5, 6, 7, 8, 9]
 $z = [123, 456, 789];
-$l = "";
+$l = [];
 foreach ($z as $x) {
-    echo $k = strval($x);
-    $l .= $k;
+    $l[] = mb_str_split($x);
 }
 echo "<pre>";
-print_r(mb_str_split($l));
+print_r($l);

@@ -4,9 +4,9 @@ $z = range(1, 1000);
 $k = 0;
 foreach ($z as $j => $x) {
     $y = mb_str_split($x);
-    for($i=0; $i<count($y); $i++){
-        $k += $y[$i];
+    foreach ($y as $y1) {
+        $k += $y1;
     }
-    echo $k == 13 ? $x."<br>" : null;
+    echo $k === 13 ? $x."<br>" : null;
     $k = 0;
 }
