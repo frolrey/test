@@ -1,4 +1,7 @@
 <?php
 //Сделайте функцию, которая вернет текущий день недели словом.
-$z = ['Sunday', 'Monday','Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-echo 'Сегодня '.$z[date('w')];
+$k = new DateTime();
+//echo $k->format('l');
+$z = ['Monday'=>'ВС', 'ПН','ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+echo 'Сегодня '.$z[$k->format('l')];
+
