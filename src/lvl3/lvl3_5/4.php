@@ -1,10 +1,10 @@
 <?php
 //Дан массив со числами. Проверьте, что в нем есть число, содержащее в себе цифру 3.
 $z = range(0,40);
-foreach ($z as $key => $x) {
-    if (str_contains(($x), "3")==true)
+foreach ($z as $x) {
+    if (str_contains((string)($x), "3"))
     {
         echo "<pre>";
-        echo "Есть такое число с ключом ".$key."<br>";
+        echo "Есть такое число ".$x."<br>";
     }
 }

@@ -6,7 +6,7 @@
 $num = 12345;
 echo "<pre>";
 echo $num."<br>";
-$str = mb_str_split(strval($num));
+$str = mb_str_split($num);
 foreach ($str as $k => $v) {
     echo $v > 0 ? "yos"."<br>" : "nah"."<br>";
 }
